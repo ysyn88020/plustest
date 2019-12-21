@@ -1,0 +1,22 @@
+server:
+  port: 80
+spring:
+  application:
+    name: plustest
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/screen
+    username: root
+    password: root
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:30000/eureka/
+
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
